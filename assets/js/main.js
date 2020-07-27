@@ -28,9 +28,18 @@
         }
     });
 
+    // $('.more-icons').on('click', function () {
+    //     $('.options').toggleClass('show');
+    // });
+    $('.more-icons').each(function () {
+        $(this).on('click', function () {
+            $(this).children('.options').toggleClass('show');
+        });
+    });
+
     setInterval(watchWorkspace, 1000);
 
-    function watchWorkspace () {
+    function watchWorkspace() {
         if (workspaces.length > 0) {
             $('.add-workspace-wrap').css('display', 'none');
         }

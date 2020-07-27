@@ -548,6 +548,7 @@ label[for=workspace-input] {
 
 .modal-dialog {
     max-width: 570px;
+    width: 500px;
 }
 
 .workspaces-wrap {
@@ -603,7 +604,7 @@ label[for=workspace-input] {
     display: block;
     position: relative;
     /* padding-left: 35px; */
-    margin-bottom: 14px;
+    margin-bottom: 21px;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
@@ -900,8 +901,8 @@ label[for=workspace-input] {
 
 
 .table-wrap {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     margin-top: 2rem;
 }
 
@@ -915,15 +916,105 @@ label[for=workspace-input] {
 .table-wrap th,
 .table-wrap td {
     border: none !important;
-}
-
-tbody td, tbody th {
     vertical-align: middle;
 }
+
+tbody tr {
+    border-radius: 1.5rem;
+}
+
+thead th {
+    font-size: 0.9rem;
+}
+
+tbody td,
+tbody th {
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
 .btn-grab-link {
-    background-color: var(--orange-assent);
+    background-color: #b3b3b3;
     color: #ffffff;
     border-radius: 1.2rem;
+    font-size: 0.8rem;
+    width: 100px;
+}
+
+.pixel-fb-icon {
+    width: 0.8rem;
+    margin-right: 0.2rem;
+}
+
+.pixel-icons::before {
+    font-size: 0.8rem;
+    margin-right: 0.2rem;
+}
+
+tbody tr {
+    border-radius: 1.5rem;
+}
+
+tbody tr td:last-child {
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+tbody tr th:first-child {
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+tbody tr:hover {
+    background-color: #ffffff;
+}
+
+tbody tr:hover .btn-grab-link {
+    background-color: var(--orange-assent);
+}
+
+.btn-td-wrap {
+    text-align: right;
+}
+
+.more-icons {
+    position: relative;
+}
+
+.more-icons::before {
+    color: #aa9f9f;
+}
+
+.more-icons .options {
+    position: absolute;
+    background-color: #ffffff;
+    width: 205px;
+    right: 0;
+    bottom: -199px;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    padding: 1rem;
+    display: none;
+}
+
+.options-icons::before {
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+}
+
+.show {
+    display: flex !important;
+}
+
+.more-icons .options a {
+    color: #000000;
+}
+
+.pagination .page-link {
+    background-color: #e1e0e2;
+    color: #000000;
+    margin-right: 0.3rem;
+    font-weight: 600;
+    font-size: 0.8rem;
 }
 
 @keyframes shake {
@@ -953,10 +1044,30 @@ tbody td, tbody th {
     .workspaces-outter {
         width: 75%;
     }
+
+    .table-wrap {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .generate-main .generate-wrap {
+        width: 95%;
+    }
 }
 
 @media screen and (max-width: 425px) {
     .workspaces-outter {
         width: 100%;
+    }
+
+    .generate-main .generate-wrap {
+        width: 100%;
+    }
+
+    .table-wrap {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 }
