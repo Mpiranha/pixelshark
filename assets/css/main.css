@@ -731,6 +731,10 @@ label[for=workspace-input] {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.generated-wrap input::placeholder {
+    color: #495057;
+}
+
 .generate-wrap input:focus {
     box-shadow: none;
     outline: none;
@@ -812,6 +816,7 @@ label[for=workspace-input] {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-basis: 80%;
 }
 
 .image-preview img {
@@ -832,6 +837,7 @@ label[for=workspace-input] {
 .box-main .title {
     font-size: 0.9rem;
     font-weight: 600;
+    color: #495057;
 }
 
 .box-main .title .icons::before {
@@ -855,6 +861,7 @@ label[for=workspace-input] {
     background-color: #f0f4f7;
     margin-top: 0.5rem;
     margin-right: 1rem;
+    flex-basis: 50%;
 }
 
 
@@ -875,7 +882,7 @@ label[for=workspace-input] {
 }
 
 .body-fixed-top {
-    margin-top: 68px;
+    padding-top: 70px;
 }
 
 .scroll-y {
@@ -885,6 +892,11 @@ label[for=workspace-input] {
 .form-link {
     padding: 2rem;
     border-radius: 1.5rem;
+    color: #495057;
+}
+
+.form-link::placeholder {
+    color: #495057;
 }
 
 .more-margin {
@@ -1015,6 +1027,37 @@ tbody tr:hover .btn-grab-link {
     margin-right: 0.3rem;
     font-weight: 600;
     font-size: 0.8rem;
+}
+
+.title-stat {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+.stat-link-box {
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+}
+
+.link-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.url-wrap span:first-child, .generated-wrap span:first-child {
+    margin-right: 1rem;
+}
+
+.generated-wrap ~ .more-icons::before {
+    margin-left: 1rem;
+}
+
+.link a {
+    color: #000000;
 }
 
 @keyframes shake {
