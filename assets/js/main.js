@@ -28,6 +28,10 @@
         }
     });
 
+    $('.user-options').on('click', function() {
+        $('.menu-outter').toggleClass('visible');
+    });
+
     // $('.more-icons').on('click', function () {
     //     $('.options').toggleClass('show');
     // });
