@@ -88,110 +88,111 @@
                 <button class="btn btn-generate">Generate Link</button>
             </div>
         </div>
-
-        <div class="row mt-5 px-md-5 justify-content-lg-around">
-            <div class="col-12 col-md-6 col-lg-6">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="uploads-main">
-                            <div class="upload-wrap mt-3">
-                                <div class="upload-btn">
-                                    <input type="file" name="" id="upload-image">
-                                    <div class="icon-wrap">
-                                        <span class="flaticon-download icons upload-icon"></span>
+        <div class="container">
+            <div class="row mt-5 px-md-5 justify-content-lg-around">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="uploads-main">
+                                <div class="upload-wrap mt-3">
+                                    <div class="upload-btn">
+                                        <input type="file" name="" id="upload-image">
+                                        <div class="icon-wrap">
+                                            <span class="flaticon-download icons upload-icon"></span>
+                                        </div>
+                                        <span class="text">Upload thumbnail</span>
                                     </div>
-                                    <span class="text">Upload thumbnail</span>
+                                    <button class="btn btn-cancel">x</button>
                                 </div>
-                                <button class="btn btn-cancel">x</button>
+
+                                <div class="image-preview">
+                                    <img src="../assets/icons/image.svg">
+                                </div>
                             </div>
-
-                            <div class="image-preview">
-                                <img src="../assets/icons/image.svg">
+                        </div>
+                        <div class="col-12 more-margin">
+                            <div class="form-group">
+                                <input placeholder="Link Title" id="title-link" class="form-control form-link"
+                                    type="text" name="">
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 more-margin">
-                        <div class="form-group">
-                            <input placeholder="title of the link" id="title-link" class="form-control form-link"
-                                type="text" name="">
+                        <div class="col-12 mt-3">
+                            <div class="form-group">
+                                <textarea id="description-link" class="form-control form-link" name="" rows="4"
+                                    placeholder="Link Description"></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 mt-3">
-                        <div class="form-group">
-                            <textarea id="description-link" class="form-control form-link" name=""
-                                rows="6">Description of new links</textarea>
-                        </div>
-                    </div>
 
 
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-5">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="box-main">
-                            <div class="title">
-                                <span class="flaticon-tag icons tag-icon"></span>
-                                Add Pixel ID
-                            </div>
-                            <div class="inputs-wrap">
-                                <!-- <div class="form-group">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="box-main">
+                                <div class="title">
+                                    <span class="flaticon-tag icons tag-icon"></span>
+                                    Add Pixel ID
+                                </div>
+                                <div class="inputs-wrap">
+                                    <!-- <div class="form-group">
                                     <input class="form-control" type="text" name="">
                                 </div> -->
-                                <div class="form-group">
-                                    <select id="select-folder" class="form-control" name="">
-                                        <option>Text</option>
-                                    </select>
+                                    <div class="form-group">
+                                        <select id="select-folder" class="form-control" name="">
+                                            <option>Text</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <a href="#">Add new pixel</a>
+                            </div>
+                            <div class="box-main">
+                                <div class="title">
+                                    <span class="flaticon-tag icons tag-icon"></span>
+                                    Add UTMs Tags
+                                </div>
+                                <div class="utm-group-main">
+                                    <div class="utm-group">
+                                        <label for="utm-source">Utm source</label>
+                                        <select id="utm-source" class="form-control" name="">
+                                            <option>Choose</option>
+                                        </select>
+                                    </div>
+                                    <div class="utm-group">
+                                        <label for="utm-source">Utm Medium</label>
+                                        <select id="utm-source" class="form-control" name="">
+                                            <option>Choose</option>
+                                        </select>
+                                    </div>
+                                    <div class="utm-group">
+                                        <label for="utm-source">Utm Campaign</label>
+                                        <select id="utm-source" class="form-control" name="">
+                                            <option>Choose</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <a href="#">Add new pixel</a>
-                        </div>
-                        <div class="box-main">
-                            <div class="title">
-                                <span class="flaticon-tag icons tag-icon"></span>
-                                Add UTMs Tags
-                            </div>
-                            <div class="utm-group-main">
-                                <div class="utm-group">
-                                    <label for="utm-source">Utm source</label>
-                                    <select id="utm-source" class="form-control" name="">
-                                        <option>Choose</option>
-                                    </select>
+                            <div class="box-main">
+                                <div class="title">
+                                    <span class="flaticon-folder icons tag-icon"></span>
+                                    Select Folder
                                 </div>
-                                <div class="utm-group">
-                                    <label for="utm-source">Utm Medium</label>
-                                    <select id="utm-source" class="form-control" name="">
-                                        <option>Choose</option>
-                                    </select>
+                                <div class="inputs-wrap">
+                                    <div class="form-group">
+                                        <select id="select-folder" class="form-control" name="">
+                                            <option>Text</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="utm-group">
-                                    <label for="utm-source">Utm Campaign</label>
-                                    <select id="utm-source" class="form-control" name="">
-                                        <option>Choose</option>
-                                    </select>
-                                </div>
+                                <a href="#">Add new pixel</a>
                             </div>
-                        </div>
-                        <div class="box-main">
-                            <div class="title">
-                                <span class="flaticon-folder icons tag-icon"></span>
-                                Select Folder
-                            </div>
-                            <div class="inputs-wrap">
-                                <div class="form-group">
-                                    <select id="select-folder" class="form-control" name="">
-                                        <option>Text</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <a href="#">Add new pixel</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 my-3">
-                <div class="d-flex justify-content-center">
-                    <button class="btn btn-get-link">Get my new link</button>
+                <div class="col-12 my-3">
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn-get-link">Get my new link</button>
+                    </div>
                 </div>
             </div>
         </div>
