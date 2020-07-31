@@ -97,7 +97,12 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">N/O</th>
+                            <th scope="col">
+                                <label class="main-check">
+                                    <input type="checkbox" id="select-all">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </th>
                             <th scope="col">FOLDER</th>
                             <th scope="col">TITLE</th>
                             <th scope="col">CLICKS</th>
@@ -112,7 +117,7 @@
                         <tr>
                             <th scope="row">
                                 <label class="main-check">
-                                    <input type="checkbox" checked="checked">
+                                    <input class="check-box" type="checkbox" checked="checked">
                                     <span class="checkmark"></span>
                                 </label></th>
                             <td>Folder One</td>
@@ -144,7 +149,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">
+                                            <a class="nav-link" href="#" data-toggle="modal" data-target="#download-qr">
                                                 <span class="flaticon-qr-code icons options-icons"></span> GRAB QR CODE
                                             </a>
                                         </li>
@@ -167,7 +172,7 @@
                         <tr>
                             <th scope="row">
                                 <label class="main-check">
-                                    <input type="checkbox" checked="checked">
+                                    <input class="check-box" type="checkbox" checked="checked">
                                     <span class="checkmark"></span>
                                 </label></th>
                             <td>Folder One</td>
@@ -199,7 +204,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">
+                                            <a class="nav-link" href="#" data-toggle="modal" data-target="#download-qr">
                                                 <span class="flaticon-qr-code icons options-icons"></span> GRAB QR CODE
                                             </a>
                                         </li>
@@ -274,6 +279,33 @@
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary">Save changes</button>
                         </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="download-qr" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <!-- <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                        
+                    </div> -->
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="qr-preview">
+                                <img class="image-fluid" src="" alt="">
+                            </div>
+                            <button class="btn btn-create-workspace">Download</button>
+                        </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
                 </div>
             </div>
         </div>

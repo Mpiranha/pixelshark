@@ -8,6 +8,7 @@ html,
 body {
     overflow-x: hidden;
     overflow-y: auto;
+    min-height: 100%;
 }
 
 .icons::before {
@@ -65,7 +66,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0 5rem;
-    height: calc(100vh - 75px);
+    /* height: calc(100vh - 75px); */
 }
 
 .divider-line {
@@ -113,9 +114,10 @@ body {
 .form-elem {
     width: 100%;
     border: none;
-    padding: 0.3rem 0;
+    padding: 0.3rem 0.3rem;
     color: #000000;
     background-color: transparent;
+    border-left: 2px double #ccc;
 }
 
 .form-elem:focus {
@@ -237,7 +239,7 @@ body {
 }
 
 .forgot-pwd a {
-    color: #397bfc;
+    color: var(--orange-assent);
     font-size: 0.8rem;
 }
 
@@ -611,6 +613,7 @@ label[for=workspace-input] {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin-right: 1rem;
 }
 
 /* Hide the browser's default checkbox */
@@ -897,7 +900,7 @@ label[for=workspace-input] {
 }
 
 .form-link::placeholder {
-    color: #495057;
+    color: #9c9fa1;
 }
 
 .more-margin {
@@ -1158,6 +1161,27 @@ tbody tr:hover .btn-grab-link {
 
 .visible {
     display: block;
+}
+
+.qr-preview {
+    background-color: #eeedee;
+    border-radius: 1rem;
+    height: 150px;
+    width: 190px;
+    margin-bottom: 1rem;
+}
+
+.qr-preview img {
+    border-radius: 1rem;
+}
+
+.max-height {
+    height: 100vh;
+}
+
+.custom-height {
+    height: calc(100% - 90px);
+    align-items: center;
 }
 
 

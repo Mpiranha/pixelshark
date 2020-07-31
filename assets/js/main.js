@@ -28,8 +28,20 @@
         }
     });
 
-    $('.user-options').on('click', function() {
+    $('.user-options').on('click', function () {
         $('.menu-outter').toggleClass('visible');
+    });
+
+    $('#select-all').on('change', function (event) {
+        if (event.target.checked) {
+            $('.check-box').each(function() {
+                $(this).attr('checked', true);
+            });
+        } else {
+            $('.check-box').each(function() {
+                $(this).attr('checked', false);
+            });
+        }
     });
 
     // $('.more-icons').on('click', function () {
