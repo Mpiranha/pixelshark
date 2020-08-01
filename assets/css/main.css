@@ -884,6 +884,31 @@ label[for=workspace-input] {
     width: 150px;
 }
 
+.platform-input {
+    display: flex;
+    align-items: center;
+    background-color: #f0f4f7;
+    margin-bottom: 1rem;
+    flex-basis: 86%;
+}
+
+
+.platform-input label {
+    margin-bottom: 0;
+    flex-grow: 1;
+    padding: 0.2rem 0.7rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.platform-input .form-control:focus {
+    box-shadow: none;
+}
+
+.platform-input select {
+    width: 200px;
+}
+
 .body-fixed-top {
     padding-top: 70px;
 }
@@ -894,7 +919,6 @@ label[for=workspace-input] {
 
 .form-link {
     padding: .375rem 1rem;
-    border-radius: 1.5rem;
     color: #495057;
     font-size: 0.9rem;
 }
@@ -1182,6 +1206,10 @@ tbody tr:hover .btn-grab-link {
 .custom-height {
     height: calc(100% - 90px);
     align-items: center;
+}
+
+#embed-wrap {
+    display: none;
 }
 
 

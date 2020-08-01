@@ -34,13 +34,23 @@
 
     $('#select-all').on('change', function (event) {
         if (event.target.checked) {
-            $('.check-box').each(function() {
+            $('.check-box').each(function () {
                 $(this).attr('checked', true);
             });
         } else {
-            $('.check-box').each(function() {
+            $('.check-box').each(function () {
                 $(this).attr('checked', false);
             });
+        }
+    });
+
+    $('#platform').on('change', function () {
+        if ($(this).val() === 'other') {
+            $('#pixel-id-wrap').css('display', 'none');
+            $('#embed-wrap').css('display', 'block');
+        } else {
+            $('#pixel-id-wrap').css('display', 'block');
+            $('#embed-wrap').css('display', 'none');
         }
     });
 
