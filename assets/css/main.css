@@ -1,4 +1,6 @@
+@import '../font-extra/flaticon.css';
 @import '../font/flaticon.css';
+
 
 :root {
     --orange-assent: #f6702c;
@@ -1274,6 +1276,265 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+/* edit profile */
+
+.form-desc {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+.upload-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.user-image-prev {
+    height: 6rem;
+    background-color: #e9e9e9;
+    width: 7rem;
+    border-radius: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.upload-btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    background-color: #f5e6fa;
+    padding: 0.3rem 1rem 0.3rem 0.4rem;
+    border-radius: 2rem;
+}
+
+.upload-btn input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.upload-btn .icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f66f2c50;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+}
+
+.upload-btn .icon-wrap .upload-icon::before {
+    font-size: 1rem;
+    color: #ff5500;
+}
+
+.upload-btn .text {
+    color: var(--orange-assent);
+}
+
+.btn-cancel {
+    width: 2rem;
+    height: 2rem;
+    background-color: #fccccb;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.btn-cancel .cancel-icon::before {
+    font-size: 0.5rem;
+    font-weight: 900;
+    color: var(--orange-accent);
+}
+
+.upload-helper-text {
+    margin-top: 0.4rem;
+    display: inline-block;
+    font-size: 0.6rem;
+    width: 113px;
+}
+
+.btn-update {
+    background-color: #e25a173a;
+    color: var(--orange-assent);
+    font-weight: 800;
+    border-radius: 1rem;
+    padding: 0.2rem 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 1.3rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.account-form {
+    background-color: transparent;
+    padding: 0.9rem 1rem;
+    margin-top: -9px;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    color: transparent;
+    -webkit-text-stroke-color: #f6702c;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: white;
+}
+
+
+.btn-change-plan {
+    background-color: #fccccb;
+    color: var(--orange-assent);
+    font-weight: 800;
+    border-radius: 1rem;
+    padding: 0.2rem 1.2rem;
+    text-transform: capitalize;
+}
+
+.billing-info .desc,
+.billing-info .desc-payment {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.billing-info .desc-payment {
+    text-transform: capitalize;
+}
+
+.billing-info h4 {
+    text-transform: capitalize;
+}
+
+.billing-info .btn-cancel {
+    background-color: var(--orange-accent);
+    color: #ffffff;
+    border-radius: 1rem;
+}
+
+.billing-info {
+    margin-bottom: 1rem;
+}
+
+.payment-methods img {
+    width: 75%;
+}
+
+.setting-section {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1.3rem 0 0 0;
+}
+
+.setting-section .section-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.setting-item {
+    padding: 0.4rem 1.3rem;
+}
+
+.item-title {
+    font-size: 1.3rem;
+}
+
+.setting-section .section-desc {
+    font-size: 0.7rem;
+
+}
+
+.setting-section .section-title,
+.setting-section .section-desc {
+    padding: 0 1.3rem;
+}
+
+.divider {
+    height: 0;
+    margin: .5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Radio btn */
+/* The container */
+.radio-ctn {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radio-ctn input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radio-ctn:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .radio-ctn input:checked ~ .checkmark {
+    background-color: var(--orange-assent);
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radio-ctn input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radio-ctn .checkmark:after {
+       top: 7px;
+      left: 7px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
 
 
 /* .table-resp {
