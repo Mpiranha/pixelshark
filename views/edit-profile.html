@@ -92,6 +92,10 @@
                                     class="form-control account-form" placeholder />
                             </div>
                             <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" name id="email" class="form-control account-form" placeholder />
+                            </div>
+                            <div class="form-group">
                                 <div class="upload-wrap">
                                     <div>
                                         <div class="upload-btn">
@@ -110,6 +114,7 @@
                                     </div>
                                     <div class="user-image-prev"></div>
                                 </div>
+
                                 <div class="d-flex justify-content-end mt-4">
                                     <button class="btn btn-update">Update</button>
                                 </div>
@@ -133,11 +138,6 @@
                                 <label for>Confirm Password</label>
                                 <input v-model="passwordAndApi.confirmPassword" type="password" name
                                     id="confirm-password" class="form-control account-form" placeholder />
-                            </div>
-                            <div class="form-group">
-                                <label for>Api Token</label>
-                                <input v-model="passwordAndApi.apiToken" type="text" name id="api-token"
-                                    class="form-control account-form" placeholder />
                             </div>
                             <div class="d-flex justify-content-end mt-4">
                                 <button class="btn btn-update">Update</button>

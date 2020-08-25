@@ -1388,10 +1388,8 @@ input:checked+.slider:before {
 
 .form-title {
     font-size: 1.5rem;
-    color: transparent;
-    -webkit-text-stroke-color: #f6702c;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-width: white;
+    font-weight: 700;
+    color: #000000;
 }
 
 
